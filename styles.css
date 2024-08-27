@@ -1,0 +1,316 @@
+:root {
+  color: #d87409;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(119, 119, 119);
+  border-bottom: 1px solid #321b04;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: #26221e;
+  font-style: italic;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: hsl(0, 18%, 3%);
+}
+.navbar .navbar-nav a::after {
+  display: block;
+  padding-bottom: 0.1rem;
+  transition: 0.2s;
+}
+.navbar .nav-extra a:hover {
+  transform: scaleX(0, 5);
+}
+.navbar .nav-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .nav-extra a:hover {
+  color: hsla(0, 79%, 60%, 0.5);
+}
+.footer {
+  background: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+/* footr */
+footer {
+  background-color: #b6895b;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+footer .socials {
+  padding: 0.5rem 0;
+}
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: #26221e;
+}
+footer .links {
+  margin-bottom: 0.5rem;
+}
+footer .links a {
+  color: #110101;
+  padding: 0.7rem 1rem;
+}
+footer .credit {
+  font-size: 0.8;
+}
+footer .credit a {
+  color: #26221e;
+  font-weight: bold;
+}
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65, 5%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    display: absolute;
+  }
+}
+.hero {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  background-image: url(kopi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+.hero .content {
+  padding: 10 7%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1;
+  padding: 7%;
+}
+.hero .content h1 span {
+  color: rgb(117, 28, 28);
+}
+.hero .content p {
+  font-size: 1.5em;
+  color: rgb(22, 248, 173);
+  padding: 6%;
+}
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1, 4rem;
+  color: #fff;
+  background-color: #b6895b;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.about,
+.menu,
+.contact {
+  padding: 8rem 7% 1.4rem;
+}
+.about h2,
+.menu h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+  color: tomato;
+}
+.about .row {
+  display: flex;
+}
+/* css Tentang kami */
+.about .content {
+  margin: auto;
+}
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+.about .row .about-img img {
+  margin: auto;
+  border-radius: 10%;
+}
+
+.about .row .content {
+  flex: 5 5 50rem;
+  padding: 5 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .row .about-img .content h3 {
+  font-size: 100%;
+  margin-bottom: 1rem;
+  color: rgb(72, 113, 72);
+}
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: 10;
+  line-height: 1.4;
+  color: #fff;
+}
+.about-img img {
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: auto;
+}
+.about .row .content .h3 {
+  margin-top: 100rem;
+  font-size: 10rem;
+  margin-bottom: 10rem;
+}
+/* css bagian menu */
+.menu h2,
+.contact h2 {
+  margin-bottom: 1.5rem;
+  background-color: black;
+}
+.menu p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+}
+
+.menu .row .menu-card img {
+  border-radius: 10%;
+}
+.menu .row .menu-card-title {
+  margin: 1rem;
+  color: aqua;
+}
+
+/* css bagian kontak */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.contact .row .map {
+  flex: auto;
+  width: 50rem;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: var(--bg);
+  border: 1px solid black;
+  padding-left: 1rem;
+}
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: white;
+}
+.contact .row form .btn {
+  margin: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+
+  cursor: pointer;
+}
+.contact.row {
+  flex-wrap: wrap;
+}
